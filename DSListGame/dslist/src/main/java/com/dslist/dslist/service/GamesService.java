@@ -20,7 +20,6 @@ public class GamesService {
         return gamesRepository.findAll().stream().map(x -> new GameMinDTO(x)).toList();
     }
 
-    @Transactional(readOnly = true)
     public GameDTO findByIdGame(Long id){
         return gamesRepository.findById(id).map(GameDTO::new).orElseThrow(() -> new EntityNotFoundException("Game not found with id " + id));
     }
