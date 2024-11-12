@@ -1,6 +1,5 @@
 package com.dslist.dslist.entity;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,22 +12,13 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "tb_games")
-public class Games {
-
+@Table(name = "tb_game_list")
+public class GameList {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String title;
-    private String genre;
-    private String shortDescription;
-    private String longDescription;
-    private String platform;
-    private String imgUrl;
-    private Integer launchYear;
-    private Double score;
+    private String name;
 
-    @OneToMany(mappedBy = "games")
+    @OneToMany(mappedBy = "gameList")
     private List<Belonging> belongings = new ArrayList<>();
-
 }
