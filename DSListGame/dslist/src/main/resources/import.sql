@@ -17,3 +17,19 @@ INSERT INTO tb_games(title, genre, short_description, long_description, platform
 INSERT INTO tb_games(title, genre, short_description, long_description, platform, img_url, launch_year, score)VALUES('Cyberpunk 2077', 'RPG', 'Futuro distópico', 'Explore a cidade de Night City em uma narrativa intensa', 'PS4', 'cyberpunk.jpeg', 2020, 4.0);
 
 INSERT INTO tb_games(title, genre, short_description, long_description, platform, img_url, launch_year, score)VALUES('Animal Crossing', 'Simulação', 'Ilha paradisíaca', 'Construa sua própria ilha e faça amizades com habitantes únicos', 'Switch', 'animalcrossing.jpeg', 2020, 4.8);
+
+
+INSERT INTO tb_game_list(name)VALUES('MMO RPG');
+
+INSERT INTO tb_game_list(name)VALUES('Aventura');
+
+INSERT INTO tb_belonging(games_id, games_list_id, position)VALUES(1,1,0);
+INSERT INTO tb_belonging(games_id, games_list_id, position)VALUES(2,1,1);
+INSERT INTO tb_belonging(games_id, games_list_id, position)VALUES(3,1,2);
+INSERT INTO tb_belonging(games_id, games_list_id, position)VALUES(4,1,3);
+INSERT INTO tb_belonging(games_id, games_list_id, position)VALUES(5,1,4);
+INSERT INTO tb_belonging(games_id, games_list_id, position)VALUES(6,2,0);
+INSERT INTO tb_belonging(games_id, games_list_id, position)VALUES(7,2,1);
+INSERT INTO tb_belonging(games_id, games_list_id, position)VALUES(8,2,2);
+INSERT INTO tb_belonging(games_id, games_list_id, position)VALUES(9,2,3);
+INSERT INTO tb_belonging(games_id, games_list_id, position)VALUES(10,2,4);
