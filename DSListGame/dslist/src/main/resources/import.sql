@@ -1,0 +1,1 @@
+INSERT INTO tb_games(title,genre,short_description,long_description,platform,img_url,launch_year,score) VALUES('Fnaf3','Terror','Urso aterrorizante','Uma noite com frederico','Steam','dasdad.jpeg',2002,4.8);
